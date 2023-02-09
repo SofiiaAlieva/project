@@ -11,6 +11,9 @@ You can access this environment by clicking the button below:
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/datamindedbe/academy-capstone)
 
+
+https://github.com/SofiiaAlieva/project.git project
+
 NOTE: When you push to your own remote make sure to change the Gitpod URL to reflect your account in this README!
 
 This is an ubuntu-based environment pre-installed with:

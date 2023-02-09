@@ -3,6 +3,7 @@ import pyspark.sql.functions as psf
 from pyspark.sql import SparkSession
 from pyspark.sql.dataframe import DataFrame, Column
 
+
 config = {"spark.jars.packages":"org.apache.hadoop:hadoop-aws:3.3.1", 
 "spark.hadoop.fs.s3.impl":"org.apache.hadoop.fs.s3a.S3AFileSystem", 
 "fs.s3a.aws.credentials.provider":"com.amazonaws.auth.DefaultAWSCredentialsProviderChain"}

@@ -9,7 +9,7 @@ in an integrated exercise. You will:
 We set up a gitpod environment containing all the tools required to complete this exercise (awscli, python, vscode, ...).
 You can access this environment by clicking the button below:
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/datamindedbe/academy-capstone)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/SofiiaAlieva/project)
 
 
 https://github.com/SofiiaAlieva/project.git project

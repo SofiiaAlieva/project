@@ -1,7 +1,7 @@
 from pyspark import SparkConf
+import pyspark.sql.functions as psf
 from pyspark.sql import SparkSession
-
-# url = "s3://dataminded-academy-capstone-resources/raw/open_aq/"
+from pyspark.sql.dataframe import DataFrame, Column
 
 config = {"spark.jars.packages":"org.apache.hadoop:hadoop-aws:3.3.1", 
 "spark.hadoop.fs.s3.impl":"org.apache.hadoop.fs.s3a.S3AFileSystem", 
@@ -9,10 +9,6 @@ config = {"spark.jars.packages":"org.apache.hadoop:hadoop-aws:3.3.1",
 
 conf = SparkConf().setAll(config.items())
 spark = SparkSession.builder.config(conf=conf).getOrCreate()
-
-df = spark.read.json("s3://dataminded-academy-capstone-resources/raw/open_aq/")
-df.show()
-
 
 def flatten():
     df = spark.read.json("s3://dataminded-academy-capstone-resources/raw/open_aq/")
@@ -25,3 +21,4 @@ def flatten():
         .drop("date")
     )
     return flattened_df
+

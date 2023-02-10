@@ -15,7 +15,7 @@ default_args = {
     "retries": 2,
     "retry_delay": timedelta(seconds=15),
     "depends_on_past": False,
-    "start_date": dt.datetime(2022, 11, 28, tz="Europe/Brussels"),
+    "start_date": dt.datetime(2023, 2, 10, tz="Europe/Brussels"),
 }
 
 dag = DAG(

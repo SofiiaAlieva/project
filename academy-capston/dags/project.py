@@ -30,4 +30,5 @@ with dag:
         job_name="Sofiia-capstone",
         job_queue="arn:aws:batch:eu-west-1:338791806049:job-queue/academy-capstone-winter-2023-job-queue",
         job_definition="arn:aws:batch:eu-west-1:338791806049:job-definition/Sofiia-capstone:2",
+        overrides={}
     )

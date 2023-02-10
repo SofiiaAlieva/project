@@ -1,20 +1,17 @@
+"""DAG for the project based on the job academy-capstone/project.py"""
+
 from datetime import timedelta
 import datetime as dt
-import json
 
 from airflow import DAG
-from airflow.operators.python import PythonOperator
 from airflow.providers.amazon.aws.operators.batch import BatchOperator
 
-from pyspark.sql.types import *
-
-"""DAG for the project based on the job academy-capstone/project.py"""
 
 default_args = {
     "retries": 2,
     "retry_delay": timedelta(seconds=15),
     "depends_on_past": False,
-    "start_date": dt.datetime(2023, 2, 10, tz="Europe/Brussels"),
+    "start_date": dt.datetime(2023, 2, 10),
 }
 
 dag = DAG(
@@ -24,6 +21,8 @@ dag = DAG(
     max_active_runs=1,
     catchup=False,
 )
+
+dag.md=__doc__
 
 with dag:
     submit_batch_job = BatchOperator(
